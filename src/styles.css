@@ -1,0 +1,98 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import './styles/_var.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: var(--body-new); */
+  background-image: url('./img/bg/beautiful.jpg');
+  overflow-y: auto;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+
+input[data-theme="dark"],
+input[data-theme="dark"]:focus {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+input[data-theme="dark"]::placeholder {
+  color: white;
+}
+
+h2, h3{
+  text-align: center;
+}
+
+p{
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+a:hover{
+  text-decoration: solid underline white 1.5px !important;
+}
+
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 5;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+header, footer{
+  background-color: var(--dark);
+}
+footer h2{
+color: var(--light);
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  
+}
+
+.text h2{
+  margin-bottom: 0;
+  padding: 12px;
+  color: var(--text-new);
+  font-size: 40px;
+}
+
+.text p{
+  color: var(--text-new);
+  padding: 15px;
+  font-size: 30px;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

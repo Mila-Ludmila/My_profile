@@ -1,0 +1,15 @@
+:root{
+  --body:#ffffff;
+  --body-new:#29293d;
+  --contrast:#BFB3A8;
+  --link: #514759;
+  --header: rgb(2, 254, 145);
+  --dark:#555585;
+  --middle:#80838C;
+  --light:#dad5d5;
+  --hover-link: #C5FF95;
+  --muted: #969697e2;
+  --text: #F2613F;
+  --text-contrast: #F3E3E2;
+  --text-new: #dbecf8;
+}

@@ -1,0 +1,50 @@
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  
+}
+
+.text h2{
+  margin-bottom: 0;
+  padding: 12px;
+  color: var(--text-new);
+}
+
+.text p{
+  color: var(--text-new);
+  padding: 15px;
+  font-size: 20px;
+}
+
+@media (max-width: 479.98px) {
+  .text {
+    padding: 20px 25px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.link{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0;
+}
+.link svg{
+  color: white;
+    transform: rotate(180deg);
+    height: 50px;
+    width: 40px;
+    size: 30px;
+    transition: all 0.5s ease 0s;
+}
+.link svg:hover{
+  color: var(--text);
+    height: 60px;
+    width: 60px;
+}
